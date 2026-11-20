@@ -33,7 +33,7 @@ jobs:
           make chaosctl
       - name: Install localstack && aws client
         run: |
-          helm repo add localstack-repo http://helm.localstack.cloud
+          helm repo add localstack-repo https://helm.localstack.cloud
           helm upgrade --install localstack localstack-repo/localstack --version 0.1.2
           pip install awscli
 
