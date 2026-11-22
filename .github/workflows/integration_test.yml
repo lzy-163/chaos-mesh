@@ -19,6 +19,8 @@ jobs:
 
       - name: Create kind cluster
         uses: helm/kind-action@v1.0.0-rc.1
+        with:
+          cluster_name: chart-testing
 
       - name: Install Chaos Mesh
         run: |
